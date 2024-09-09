@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Quality Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>BreatheairMind</h1>
+        </div>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Air Maps</li>
+                <li>Newsroom</li>
+                <li>Breathe Care</li>
+            </ul>
+        </nav>
+        <div class="user-info">
+            <img src="user.jpg" alt="User Profile" class="user-img">
+            <span>Christopher Wibisono</span>
+        </div>
+    </header>
+
+    <section class="main">
+        <div class="map">
+            <!-- Map container -->
+            <div id="map"></div>
+
+            <div class="pollutant-info">
+                <h2>New York NY, United States</h2>
+                <div class="aqi-cards">
+                    <div class="aqi-card">
+                        <h3>PM2.5</h3>
+                        <span>11.62 μg/m³</span>
+                    </div>
+                    <div class="aqi-card">
+                        <h3>O3</h3>
+                        <span>38.11 μg/m³</span>
+                    </div>
+                    <div class="aqi-card">
+                        <h3>NO2</h3>
+                        <span>7.04 μg/m³</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="aqi-summary">
+            <div class="aqi-meter">
+                <h2>New York NY</h2>
+                <div class="aqi-value">
+                    <h3>AQI 20</h3>
+                    <span>Very Good</span>
+                </div>
+            </div>
+
+            <div class="forecast-chart">
+                <h2>Air Quality Forecast</h2>
+                <canvas id="forecastChart"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <button class="watchlist-btn">Watchlist</button>
+        <button class="tips-btn">Health Tips</button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
