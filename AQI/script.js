@@ -28,10 +28,10 @@ const forecastChart = new Chart(ctx, {
     options: {
         scales: {
             x: {
-                beginAtZero: false
+                beginAtZero: false,
             },
             y: {
-                beginAtZero: false
+                beginAtZero: true,
             }
         }
     }
